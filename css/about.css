@@ -26,7 +26,7 @@
 
 .card {
   width: 100%;
-  max-width: 950px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +35,7 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  margin-bottom: 60px;
 }
 
 /* IMAGE SECTION */
@@ -60,7 +61,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.75);
+  background: rgba(47, 47, 47, 0.75);
   color: #fff;
 
   display: flex;
@@ -83,6 +84,14 @@
   line-height: 1.5;
   margin-bottom: 10px;
 }
+.info-about-overlay {
+  margin-bottom: 15px;
+  background: rgba(165, 165, 165, 0.319);
+  padding: 10px 10px 5px;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
 /* SHOW ONLY WHEN IMAGE IS HOVERED */
 .img-box:hover .img-overlay {
   opacity: 1;
@@ -98,8 +107,8 @@
 }
 
 .icons a {
-  color: #fff;
-  background-color: rgb(142, 135, 135);
+  color: #142d4c;
+  background-color: #9fd3c7;
   padding: 10px 15px 10px;
   border-radius: 10px;
   margin: 0 8px;
@@ -108,7 +117,8 @@
 }
 
 .icons a:hover {
-  color: #667eea;
+  background: #9fd3c7;
+  color: #0090fe;
   transform: scale(1.2);
 }
 
