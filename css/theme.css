@@ -1,0 +1,34 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #142d4c;
+    --secondary-color: #9fd3c7;
+    --accent-color:  #385170;
+    --background-color: #ececec;
+    --text-color: #142d4c;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.bottom-nav a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.overlay {
+    color: var(--text-color);
+}
+
+button{
+    color: var(--text-color);
+}
+
+/* .about-container{
+    background: var(--accent-color);
+} */

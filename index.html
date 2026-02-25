@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navneet || Main Dashboard</title>
-    <link rel="stylesheet" href="/css/bottom_nav.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/photos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navneet || Main Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/loading_img.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/bottom_nav.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/photos.css">
 </head>
+
 <body>
-<!-- From Uiverse.io by GustavoAlmeidaPuff --> 
-<input type="checkbox" id="theme-mode" class="mode" hidden="" />
-<div class="container">
-  <div class="wrap">
-    <input
-      checked=""
-      type="radio"
-      id="rd-1"
-      name="radio"
-      class="rd-1"
-      hidden=""
-    />
-    <label for="rd-1" class="label" style="--index: 0;"
-      ><span>About Me</span></label
-    >
-
-    <input type="radio" id="rd-2" name="radio" class="rd-2" hidden="" />
-    <label for="rd-2" class="label" style="--index: 1;"
-      ><span>Summary</span></label
-    >
-
-    <input type="radio" id="rd-3" name="radio" class="rd-3" hidden="" />
-    <label for="rd-3" class="label" style="--index: 2;"
-      ><span>Portfolio</span></label
-    >
-
-    <div class="bar"></div>
-    <div class="slidebar"></div>
+  <div class="bottom-nav">
+    <a href="index.html"><button class="btns">Home</button></a>
+    <a href="#about-section"><button class="btns">About</button></a>
+    <a href="lunch">
+      <button class="get-started-btn">
+        Get started
+        <div class="icon">
+          <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor"></path>
+          </svg>
+        </div>
+      </button>
+    </a>
   </div>
-</div>
+  <section id="home-section">
+    <div class="image-container">
+      <img class="img-hero"
+        src="https://imgs.search.brave.com/Tbr9HXO5jw3wEn_ug9ul8e3k03QmHyUczsgL6UG-c9g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDU0MTA5/NDcuanBn"
+        alt="Image">
+      <div class="overlay">
+        <h2>Welcome!</h2>
+        <p>Hey ! I'm Navneet Raj</p>
+        <a target="_blank"
+          href="https://firebasestorage.googleapis.com/v0/b/moco-player-f396a.appspot.com/o/sachinpro.surge.sh%2FCV%20Or%20Resume.pdf?alt=media&token=94b53791-aab0-41f3-ab4e-8ff93567138c">
+          <button>Download Resume or CV.</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <h2>About Me</h2>
+  <section id="about-section">
 
-    <main>
+    <div class="about-container">
+      <div class="card">
+
+        <!-- LEFT COLUMN (IMAGE) -->
+        <div class="img-box">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="profile">
+
+          <div class="img-overlay">
+            <h3>John Doe</h3>
+            <p>Frontend Developer</p>
+
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (INFO) -->
+        <div class="content">
+          <h2>John Doe</h2>
+          <h4>Frontend Developer</h4>
+          <p>
+            Passionate developer creating modern and responsive
+            web applications with clean UI design.
+          </p>
+          <button>email</button>
+        </div>
+
+      </div>
 
 
+  </section>
 
-    </main>
-
-    <section id="photos">
-        <!-- From Uiverse.io by ilkhoeri --> 
-<div class="wrapper">
-  <div class="inner" style="--quantity: 10;">
-    <div class="card" style="--index: 0;--color-card: 142, 249, 252;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 1;--color-card: 142, 252, 204;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 2;--color-card: 142, 252, 157;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 3;--color-card: 215, 252, 142;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 4;--color-card: 252, 252, 142;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 5;--color-card: 252, 208, 142;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 6;--color-card: 252, 142, 142;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 7;--color-card: 252, 142, 239;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 8;--color-card: 204, 142, 252;">
-      <div class="img"></div>
-    </div>
-    <div class="card" style="--index: 9;--color-card: 142, 202, 252;">
-      <div class="img"></div>
-    </div>
-  </div>
-</div>
-
-    </section>
-    
 </body>
+
 </html>
