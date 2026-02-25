@@ -25,8 +25,8 @@
 
 
 .card {
-  width: auto;
-  max-width: 700px;
+  width: 100%;
+  max-width: 950px;
   display: flex;
   justify-content: center;
   align-items: center;
