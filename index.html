@@ -307,25 +307,31 @@ document.addEventListener("DOMContentLoaded", function () {
   let activeIndex = 0;
 
   function updateCards(index) {
-    activeIndex = index;
+  activeIndex = index;
 
-    cards.forEach((card, i) => {
-      card.classList.remove("active", "left", "right", "hidden");
+  const total = cards.length;
 
-      if (i === activeIndex) {
-        card.classList.add("active");
-      } 
-      else if (i === activeIndex - 1) {
-        card.classList.add("left");
-      } 
-      else if (i === activeIndex + 1) {
-        card.classList.add("right");
-      } 
-      else {
-        card.classList.add("hidden");
-      }
-    });
-  }
+  cards.forEach((card, i) => {
+    card.classList.remove("active", "left", "right", "hidden");
+
+    // Calculate circular positions
+    const leftIndex = (activeIndex - 1 + total) % total;
+    const rightIndex = (activeIndex + 1) % total;
+
+    if (i === activeIndex) {
+      card.classList.add("active");
+    } 
+    else if (i === leftIndex) {
+      card.classList.add("left");
+    } 
+    else if (i === rightIndex) {
+      card.classList.add("right");
+    } 
+    else {
+      card.classList.add("hidden");
+    }
+  });
+}
 
   cards.forEach((card, index) => {
     card.addEventListener("click", () => {
