@@ -5,7 +5,6 @@
   align-items: center;      /* vertical center */
   border-radius: 15px;
   cursor: pointer;
-
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -24,14 +23,15 @@
 }
 
 
-.card {
+.about-card {
   width: 100%;
   max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  background: #fff;
+  background: #ffffffdb;
+  backdrop-filter: blur(2px);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
